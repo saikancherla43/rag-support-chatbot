@@ -1,0 +1,8 @@
+# Core deps for the Acme Cloud RAG support-chatbot demo.
+# sentence-transformers is the primary embedding backend (all-MiniLM-L6-v2,
+# downloaded automatically on first run). If it can't be installed or the
+# model can't be downloaded, the pipeline falls back to TF-IDF (scikit-learn)
+# and records the active backend in the saved index.
+sentence-transformers>=2.7.0
+scikit-learn>=1.4
+numpy>=1.26
